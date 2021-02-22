@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<manifest>
+    <application name="TriSpectorP_FirstSteps">
+        <crown name="TriSpectorP_FirstSteps">
+            <desc>user script</desc>
+        </crown>
+        <meta key="author">AppSpace Sample</meta>
+        <meta key="version">2.5.0</meta>
+        <meta key="licensed">false</meta>
+        <meta key="priority">low</meta>
+        <meta key="copy-protected">false</meta>
+        <meta key="read-protected">false</meta>
+        <entry path="pages" default="Viewer.msdd">
+            <file type="application/zip">Viewer.msdd</file>
+        </entry>
+        <entry path="scripts" default="01_Image_SavedConfig.lua">
+            <file type="text/x-lua">00_Description.lua</file>
+            <file type="text/x-lua">01_Image_SavedConfig.lua</file>
+            <file type="text/x-lua">02_BasicSetupExample.lua</file>
+            <file type="text/x-lua">03_PassFail.lua</file>
+        </entry>
+    </application>
+</manifest>
