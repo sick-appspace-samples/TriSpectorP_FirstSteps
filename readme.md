@@ -17,4 +17,4 @@ See the tutorial "TriSpectorP - FirstSteps"
 
 ### Topics
 
-Device, TrispectorP, Getting-Started, Acquisition, Sample, SICK-AppSpace
+device, trispectorp, getting-started, acquisition, sample, sick-appspace
