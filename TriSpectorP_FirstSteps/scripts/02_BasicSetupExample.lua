@@ -54,8 +54,9 @@ local function main()
 end
 Script.register('Engine.OnStarted', main)
 
--- Image callback
--- @OnNewImage(images: Image, sensorData: SensorData)
+---Image callback
+---@param images Image
+---@param sensorData SensorData
 local function OnNewImage(images)
   if #images == 2 then -- Only 3D images
     local heightMap = images[1]
@@ -74,7 +75,7 @@ end
 
 gCamera:register('OnNewImage', OnNewImage)
 
--- --@loadConfig(jobPath: string)
+-- ---@param jobPath string
 -- local function loadConfig(jobPath)
 --   -- Check if file exists
 --   if not File.exists(jobPath) then

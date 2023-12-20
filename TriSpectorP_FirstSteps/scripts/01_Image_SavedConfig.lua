@@ -33,7 +33,7 @@ gImageConfig3D = Image.Provider.Camera.V3TConfig3D.create()
 gViewer = View.create('viewer3D1')
 local imgDeco = View.ImageDecoration.create()
 
---@loadConfig(jobPath: string)
+---@param jobPath string
 local function loadConfig(jobPath)
   -- Check if file exists
   if not File.exists(jobPath) then
@@ -52,8 +52,9 @@ local function loadConfig(jobPath)
   return loadedConfig
 end
 
--- Image callback
--- @OnNewImage(images: Image, sensorData: SensorData)
+---Image callback
+---@param images: Image[]
+---@param sensorData SensorData
 local function OnNewImage(images)
   if #images == 2 then -- Only 3D images
     local heightMap = images[1]

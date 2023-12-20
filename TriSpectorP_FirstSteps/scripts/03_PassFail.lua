@@ -43,8 +43,9 @@ local imgDeco = View.ImageDecoration.create()
 local regionDeco = View.PixelRegionDecoration.create()
 regionDeco:setColor(0, 250, 0, 100) -- Green semi transparent
 
--- Image callback
--- @OnNewImage(images: Image, sensorData: SensorData)
+---Image callback
+---@param images Image
+---@param sensorData SensorData
 local function OnNewImage(images)
   gViewer:clear()
   local hMapId = nil
@@ -84,8 +85,8 @@ local function OnNewImage(images)
   gViewer:present()
 end
 
--- Load config
---@loadConfig(jobPath: string)
+---Load config
+---@param jobPath string
 local function loadConfig(jobPath)
   -- Check if file exists
   if not File.exists(jobPath) then
